@@ -3,5 +3,6 @@ User-agent: *
 Allow: /
 Disallow: /thank-you
 Disallow: /thank-you-gc
+Disallow: /thank-you-gc-completed
 
-Sitemap: https://dancetonight.ca/sitemap.xml
+Sitemap: https://arthurmurracalgary.ca/sitemap.xml

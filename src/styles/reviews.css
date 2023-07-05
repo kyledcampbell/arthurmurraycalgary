@@ -105,12 +105,16 @@
   font-size: 23px;
 }
 
-.fb-logo-link {
+.g-logo {
+  width: 23px;
+}
+
+.g-logo-link {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   margin-bottom: 0;
 }
-.fb-logo-link:hover {
+.g-logo-link:hover {
   cursor: pointer;
 }
 
@@ -124,7 +128,7 @@
 
 @media screen and (min-width: 1043px) {
   .reviews {
-    padding: 4em 0 5em;
+    padding: 5em 0;
   }
   .reviews-container {
     padding: 5em 0 6em;

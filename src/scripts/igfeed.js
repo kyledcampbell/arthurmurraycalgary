@@ -24,7 +24,7 @@ const sbTokenSuccess = function (parsedData) {
     accessToken: sbToken,
     limit: 9,
     template:
-      '<figure><a href="{{link}}" class="{{type}}"><img src="{{image}}" alt="AM Edmonton Instagram Post" loading="lazy" width="250" height="250" /><figcaption>{{caption}}</figcaption></a></figure>',
+      '<figure><a href="{{link}}" class="{{type}}"><img src="{{image}}" alt="AM Calgary Instagram Post" loading="lazy" width="250" height="250" /><figcaption>{{caption}}</figcaption></a></figure>',
     target: "sbInstaFeed",
   });
   sbInstaFeed.run();
