@@ -1,0 +1,43 @@
+.header {
+  background-image: radial-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.7)),
+    url(../images/careersHeader.jpg);
+  background-position: center center;
+}
+.template-body {
+  background-image: linear-gradient(
+      174deg,
+      hsla(0, 0%, 92%, 0.8) 0%,
+      hsla(0, 0%, 92%, 0.8) 35%,
+      var(--arthurMurrayBlue) 35.08%,
+      var(--arthurMurrayBlue) 100%
+    ),
+    url(../images/FootprintsBackground.svg);
+}
+
+@media screen and (min-width: 613px) {
+  .header {
+    background-position-y: -45%;
+  }
+  .template-body {
+    background-image: linear-gradient(
+        174deg,
+        hsla(0, 0%, 92%, 0.8) 0%,
+        hsla(0, 0%, 92%, 0.8) 32%,
+        var(--arthurMurrayBlue) 32.08%,
+        var(--arthurMurrayBlue) 100%
+      ),
+      url(../images/FootprintsBackground.svg);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .template-body {
+    background-image: linear-gradient(
+        174deg,
+        hsla(0, 0%, 92%, 0.8) 0%,
+        hsla(0, 0%, 92%, 0.8) 45%,
+        var(--arthurMurrayBlue) 45.08%,
+        var(--arthurMurrayBlue) 100%
+      ),
+      url(../images/FootprintsBackground.svg);
+  }
+}

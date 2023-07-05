@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gift Certificates | Arthur Murray Edmonton</title>
+    @@include('./partials/head-basic.html')
+    <meta
+    name="description"
+    content="Ballroom Dance Lesson Gift Certificates for any occasion at Arthur Murray Edmonton. Perfect for Valentine's Day, Birthday, Christmas, Mother's Day, Father's day, and any other occasion."
+  />
+
+    @@include('./partials/criticalCSS.html')
+    <script defer src="./scripts/scripts.js"></script>
+    <link rel="stylesheet" href="styles/page-template.css" />
+    <link rel="stylesheet" href="styles/gift-certificates.css" />
+  </head>
+  <body>
+    @@include('./partials/header.html')
+    <main id="content">
+      <section class="header fade-in">
+        <div class="template-header-text">
+          <h1><span>Gift Certificates</h1>
+          <h2>Arthur Murray Edmonton</h2>
+        </div>
+      </section>
+      <section class="doorways" id="doorways">
+        <h2 >Get your loved one the gift of dance!</h2>
+        <ul class="cards">
+          <li class="card-item cardJs animation asl" id="card1">
+            <picture>
+              <source type="image/webp" srcset="./images/GiftCertificate-SampletheStudio.webp">
+              <img src="./images/GiftCertificate-SampletheStudio.jpg" alt="Gift Certificate - Sample the Studio" width="500" height="333" loading="lazy">
+            </picture>
+            <h3>$504</h3>
+            <div class="card-text">
+              <p class="classes">(4) Private Lessons <br> (2) Group Classes <br> (2) Practice Parties</p>
+              <div class="buttons">
+                <p><a href="https://buy.stripe.com/00g9C39a08lb3nO8wx" class="btn" target="_blank" aria-label="buy gift certificate - opens in a new window" rel="noreferrer">Buy Now</a></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <p class="exclusions">
+          * Not redeemable for cash. New Students 18 years and overs only.  One coupon per person/couple. Cannot be combined with another offer.
+        </p>
+      </section>
+      @@include('./partials/new-student-contact.html')
+      @@include('./partials/kathryn-quote.html')
+    </main>
+    @@include('./partials/footer.html')
+  </body>
+</html>
