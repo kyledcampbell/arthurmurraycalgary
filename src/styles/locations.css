@@ -62,7 +62,7 @@
   color: var(--offwhite);
 }
 .template-text-2 a {
-  color: #9872b3;
+  color: var(--lightblue);
 }
 .locations-contact .card-text-2 h3 {
   padding: 0;
