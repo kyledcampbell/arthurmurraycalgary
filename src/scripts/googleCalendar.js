@@ -12,8 +12,18 @@ var googleCalendarSync = mobiscroll.googleCalendarSync;
 var calendars = [
   {
     id: "ab1244573dfa772b3bb4394cce6cd18f972d37e61feadb57186b312fc5cfa462@group.calendar.google.com",
-    name: "Newcomer Calendar",
+    name: "Beginner Groups",
     color: "#ffb600",
+  },
+  {
+    id: "42eb02bb15e2cde62bfdc1be671bf7134c0da13a3678092ccbdf07cf37740019@group.calendar.google.com",
+    name: "Intermediate/Advanced Groups",
+    color: "#061d37",
+  },
+  {
+    id: "408bfdb0044539f9fb88206a497891060c6d56f3ea639e2f4090a22ad798710a@group.calendar.google.com",
+    name: "Events/Holidays/Closures",
+    color: "#93a5d1",
   },
 ];
 

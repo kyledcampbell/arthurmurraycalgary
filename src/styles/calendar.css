@@ -50,11 +50,14 @@
   }
 }
 
-.newcomer {
+.beginner {
   color: var(--arthurMurrayYellow);
 }
 .advanced {
   color: var(--arthurMurrayBlue);
+}
+.events {
+  color: #93a5d1;
 }
 
 .mbsc-font {
