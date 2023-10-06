@@ -1,7 +1,9 @@
 .header {
   background-image: radial-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.7)),
     url(../images/couplesDanceCover.jpg);
-  background-position: 58% top;
+  background-position: 80% 0%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .template-body {
   background-image: linear-gradient(
