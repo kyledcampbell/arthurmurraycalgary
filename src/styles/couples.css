@@ -55,3 +55,9 @@
       url(../images/FootprintsBackground.svg);
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .video-player {
+    margin: 0.5em auto 0 1.5em;
+  }
+}

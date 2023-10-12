@@ -28,4 +28,7 @@
       ),
       url(../images/FootprintsBackground.svg);
   }
+  .video-player {
+    margin: 0.5em auto 0 1.5em;
+  }
 }
