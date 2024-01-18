@@ -855,6 +855,7 @@
             id="contactForm"
             action="./thank-you-gc-completed.html"
             class="form"
+            data-netlify-recaptcha="true"
             data-netlify="true"
           >
             <h2>Thank you for Purchasing Dance Lessons!</h2>
@@ -931,6 +932,18 @@
                 placeholder="Message"
                 rows="4"
               ></textarea>
+              <div>
+                <input
+                  type="checkbox"
+                  class="consent-check"
+                  name="consent"
+                  required
+                /><label class="consent-label" for="consent">
+                  I agree to receive SMS messages and emails to the provided
+                  numbers/emails listed above</label
+                >
+              </div>
+              <div data-netlify-recaptcha="true"></div>
               <button type="submit" id="submit" value="submit">Submit</button>
             </fieldset>
           </form>
@@ -999,7 +1012,7 @@
   <div class="marketing-links">
     <p class="copywriting">
       <small class="copywrite-year">
-        Copyright © <span class="copy-year">2023</span>, </small
+        Copyright © <span class="copy-year">2024</span>, </small
       ><small>  Arthur Murray</small>
     </p>
     <p class="onbeat-link">
