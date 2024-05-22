@@ -1,17 +1,20 @@
+<link
+  href="./styles/mobiscroll/mobiscroll.javascript.min.css"
+  rel="stylesheet"
+/>
 <link rel="stylesheet" href="styles/calendar.css" />
-<section class="calendar-section">
-  <h2 class="calendar-header" id="calendar">Calendar</h2>
-  <a
-    href="./images/calgaryCalendar.jpg"
-    target="_blank"
-    aria-label="opens in a new tab"
-  >
-    <img
-      src="./images/calgaryCalendar.jpg"
-      alt="Arthur Murray Calgary Group Class Calendar"
-      width="1000"
-      height="773"
-      class="calendar"
-    />
-  </a>
-</section>
+<div class="calendar" id="calendar">
+  <h2 class="calendar-header">Calendars</h2>
+  <div id="google-calendar" class="google-cal"></div>
+  <div class="calendar-keys">
+    <p class="calendar-key">
+      <i class="fas fa-circle beginner"></i> Beginner Groups
+    </p>
+    <p class="calendar-key">
+      <i class="fas fa-circle advanced"></i> Intermediate/Advanced Groups
+    </p>
+    <p class="calendar-key">
+      <i class="fas fa-circle events"></i> Events/Holidays/Closures
+    </p>
+  </div>
+</div>
