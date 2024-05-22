@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kids Dance Lessons | Arthur Murray Durham</title>
+    @@include('./partials/head-basic.html')
+    <meta
+      name="description"
+      content="Dance Lessons for Kids at Arthur Murray Durham, located in Durham, NC."
+    />
+    @@include('./partials/schema-main.html')
+    @@include('./partials/criticalCSS.html')
+    <script defer src="./scripts/scripts.js"></script>
+    <link rel="stylesheet" href="styles/page-template.css" />
+    <link rel="stylesheet" href="styles/kids.css" />
+  </head>
+
+  <body>
+    @@include('./partials/header.html')
+    <main id="content">
+      <section class="header fade-in">
+        <div class="template-header-text">
+          <h1><span>Kids</span> <span>Dance Lessons</span></h1>
+          <h2>For Children Ages 4 and Up</h2>
+        </div>
+      </section>
+      <section class="template-body">
+        <div class="template-text-1">
+          <h3>Dance lessons for kids in Calgary</h3>
+          <p>
+            What’s the best way to improve your kid’s self-esteem? Dancing of
+            course!
+          </p>
+
+          <p>
+            Improve social skills and provide an outlet for expression, all
+            while enhancing their cognitive development. Check exercise off
+            their daily list and help them create healthy habits for life.
+          </p>
+
+          <p>Walk In, Dance Out ®</p>
+        </div>
+        <div class="video-player">
+          <iframe
+            src="https://player.vimeo.com/video/532060114?h=009df7df2f"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+            title="Arthur Murray"
+          ></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <div class="template-angle">
+          <picture>
+            <source type="image/webp" srcset="./images/ballroomKids.webp" />
+            <img
+              src="./images/ballroomKids.png"
+              alt="Kids Dancing together"
+              width="500"
+              height="333"
+              loading="lazy"
+            />
+          </picture>
+
+          <div class="template-text-2">
+            <h3>Starting in July!</h3>
+            <h4>Offering Ballroom and Latin</h4>
+            <p>
+              Group classes and Private Lessons for children ages 4 and up.
+              <br />
+              Call us at <a href="tel:+14033190732">1 (403) 319-0732</a> or fill
+              out the form below to register!
+            </p>
+          </div>
+        </div>
+      </section>
+      @@include('./partials/kids-contact.html')
+      @@include('./partials/kathryn-quote.html')
+    </main>
+    @@include('./partials/footer.html')
+  </body>
+</html>
