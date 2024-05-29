@@ -396,6 +396,18 @@
     color: var(--arthurMurrayBlue);
     background-color: var(--white);
   }
+  .contact-button-mobile i {
+    color: var(--arthurMurrayYellow);
+  }
+  .contact-button-mobile {
+    font-size: 1.7em;
+  }
+  .menu-group {
+    display: grid;
+    grid-template-columns: 2.7em 2.7em;
+    justify-items: end;
+    align-items: center;
+  }
   @media screen and (min-width: 500px) {
     .navWrap nav::after,
     .navWrap nav > ul {
@@ -532,6 +544,12 @@
         max-height: 0;
         transform: none;
         opacity: 0;
+      }
+      .contact-button-mobile {
+        display: none;
+      }
+      .menu-group {
+        display: block;
       }
     }
   }

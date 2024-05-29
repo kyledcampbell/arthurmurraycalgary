@@ -35,7 +35,7 @@
 .card-text p {
   margin: 0;
 }
-#card20 {
+#cardCountry {
   grid-column: 1 / 4;
   max-width: 800px;
 }
@@ -47,7 +47,7 @@
   justify-self: center;
   align-self: center;
 }
-.card-item#card20 {
+.card-item#cardCountry {
   grid-template-rows: 100px 60px auto;
 }
 .card-item h3 {
@@ -62,21 +62,21 @@
   font-size: var(--h3);
 }
 
-.card-item#card20 h3 {
+.card-item#cardCountry h3 {
   margin: 0 1em;
   font-size: var(--h5);
 }
 
-.card-item#card20 picture {
+.card-item#cardCountry picture {
   width: 300px;
   height: 80px;
   margin: 0;
 }
-.card-item#card20 picture img {
+.card-item#cardCountry picture img {
   margin-bottom: 0;
 }
 
-#card20 span {
+#cardCountry span {
   display: inline-block;
 }
 #country > p {
@@ -106,16 +106,12 @@
 }
 
 @media screen and (min-width: 565px) {
-  .card-item#card20 {
+  .card-item#cardCountry {
     grid-template-rows: 100px 40px auto;
   }
 }
 
 @media screen and (min-width: 615px) {
-  .header {
-    background-size: cover;
-    background-position-y: 50%;
-  }
   .header span {
     display: inline-block;
   }
@@ -231,11 +227,11 @@
   #card20 {
     grid-column: 1 / 4;
   }
-  #card20 picture {
+  #cardCountry picture {
     width: 700px;
     height: 180px;
   }
-  #card20 h3 {
+  #cardCountry h3 {
     font-size: var(--h5);
   }
 }

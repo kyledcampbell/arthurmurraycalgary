@@ -1,7 +1,8 @@
 .header {
   background-image: radial-gradient(hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.7)),
     url(../images/salsaCover.jpg);
-  background-position: 50% 18%;
+  background-position: 50% 0%;
+  background-size: cover;
 }
 
 .template-text-2 p:first-of-type {
@@ -62,7 +63,7 @@
 
 @media screen and (min-width: 615px) {
   .header {
-    background-position-y: 40%;
+    background-position-y: 0%;
   }
 }
 @media screen and (min-width: 655px) {

@@ -467,6 +467,18 @@
     color: var(--arthurMurrayBlue);
     background-color: var(--white);
   }
+  .contact-button-mobile i {
+    color: var(--arthurMurrayYellow);
+  }
+  .contact-button-mobile {
+    font-size: 1.7em;
+  }
+  .menu-group {
+    display: grid;
+    grid-template-columns: 2.7em 2.7em;
+    justify-items: end;
+    align-items: center;
+  }
   @media screen and (min-width: 500px) {
     .navWrap nav::after,
     .navWrap nav > ul {
@@ -603,6 +615,12 @@
         max-height: 0;
         transform: none;
         opacity: 0;
+      }
+      .contact-button-mobile {
+        display: none;
+      }
+      .menu-group {
+        display: block;
       }
     }
   }
@@ -791,59 +809,66 @@
       width="160"
       height="38"
   /></a>
-  <input type="checkbox" id="navToggle" class="navToggle" />
-  <label for="navToggle" class="navToggleLabel"><span></span></label>
-  <nav>
-    <ul>
-      <li>
-        <input type="checkbox" id="programsToggle" class="programsToggle" />
-        <label for="programsToggle" class="programsToggleLabel dropdown"
-          >Getting Started <i class="fas fa-chevron-down"></i
-        ></label>
-        <ul class="dropdown-menu">
-          <li><a href="./singles-dance-lessons.html">Singles</a></li>
-          <li><a href="./couples-dance-lessons.html">Couples</a></li>
-          <li><a href="./wedding-dance-lessons.html">Wedding</a></li>
-          <li><a href="./kids-dance-lessons.html">Kids</a></li>
-        </ul>
-      </li>
-      <li>
-        <input type="checkbox" id="aboutToggle" class="aboutToggle" />
-        <label for="aboutToggle" class="aboutToggleLabel dropdowm"
-          >About <i class="fas fa-chevron-down"></i
-        ></label>
-        <ul class="dropdown-menu">
-          <li><a href="./dances-we-teach.html">Dances we Teach</a></li>
-          <li><a href="./how-we-teach.html">How we Teach</a></li>
-          <li><a href="./frequently-asked-questions.html">FAQ</a></li>
-          <li><a href="./legacy.html">The Legacy</a></li>
-          <li><a href="./careers.html">Careers</a></li>
-        </ul>
-      </li>
-      <li>
-        <input type="checkbox" id="locationsToggle" class="locationsToggle" />
-        <label for="locationsToggle" class="locationsToggleLabel dropdown"
-          >Studio <i class="fas fa-chevron-down"></i
-        ></label>
-        <ul class="dropdown-menu">
-          <li>
-            <a href="./dance-lessons-calgary.html">Calgary</a>
-          </li>
-          <li>
-            <a href="./dance-lessons-calgary.html#calendar" id="calendarLink"
-              >Studio Calendar</a
-            >
-          </li>
-        </ul>
-      </li>
-      <li><a href="./gift-certificates.html">Gift Certificates</a></li>
-      <li>
-        <a href="#contact" class="btn" role="button" id="newStudentOffer"
-          >New Student Offer</a
-        >
-      </li>
-    </ul>
-  </nav>
+  <div class="menu-group">
+    <div class="contact-button-mobile">
+      <a href="#contact" id="contactButtonMobile"
+        ><i class="fa fa-envelope-o" aria-hidden="true"></i
+      ></a>
+    </div>
+    <input type="checkbox" id="navToggle" class="navToggle" />
+    <label for="navToggle" class="navToggleLabel"><span></span></label>
+    <nav>
+      <ul>
+        <li>
+          <input type="checkbox" id="programsToggle" class="programsToggle" />
+          <label for="programsToggle" class="programsToggleLabel dropdown"
+            >Getting Started <i class="fas fa-chevron-down"></i
+          ></label>
+          <ul class="dropdown-menu">
+            <li><a href="./singles-dance-lessons.html">Singles</a></li>
+            <li><a href="./couples-dance-lessons.html">Couples</a></li>
+            <li><a href="./wedding-dance-lessons.html">Wedding</a></li>
+            <li><a href="./kids-dance-lessons.html">Kids</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" id="aboutToggle" class="aboutToggle" />
+          <label for="aboutToggle" class="aboutToggleLabel dropdowm"
+            >About <i class="fas fa-chevron-down"></i
+          ></label>
+          <ul class="dropdown-menu">
+            <li><a href="./dances-we-teach.html">Dances we Teach</a></li>
+            <li><a href="./how-we-teach.html">How we Teach</a></li>
+            <li><a href="./frequently-asked-questions.html">FAQ</a></li>
+            <li><a href="./legacy.html">The Legacy</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" id="locationsToggle" class="locationsToggle" />
+          <label for="locationsToggle" class="locationsToggleLabel dropdown"
+            >Studio <i class="fas fa-chevron-down"></i
+          ></label>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="./dance-lessons-calgary.html">Calgary</a>
+            </li>
+            <li>
+              <a href="./dance-lessons-calgary.html#calendar" id="calendarLink"
+                >Studio Calendar</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="./gift-certificates.html">Gift Certificates</a></li>
+        <li>
+          <a href="#contact" class="btn" role="button" id="newStudentOffer"
+            >New Student Offer</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
 </section>
 
     <main id="content" class="thank-you">
@@ -950,9 +975,11 @@
             <li><a href="./couples-dance-lessons.html">Couples</a></li>
             <li><a href="./wedding-dance-lessons.html">Wedding</a></li>
             <li><a href="./kids-dance-lessons.html">Kids</a></li>
-            <li><a href="./dance-lessons-calgary.html">Calgary</a></li>
-            <li><a href="./gift-certificates.html">Gift Certificates</a></li>
-            <li><a href="./frequently-asked-questions.html">FAQ</a></li>
+            <li><a href="./salsa-lessons-calgary.html">Salsa Dance Lessons</a></li>
+            <li><a href="./swing-lessons-calgary.html">Swing Dance Lessons</a></li>
+            <li><a href="./argentine-tango-lessons-calgary.html">Argentine Tango Lessons</a></li>
+            <li><a href="./country-dance-lessons-calgary.html">Country Dance Lessons</a></li>
+            
             
           </ul>
         </nav>
@@ -963,6 +990,7 @@
           <ul >
             <li><a href="./dances-we-teach.html">Dances We Teach</a></li>
             <li><a href="./how-we-teach.html">How We Teach</a></li>
+            <li><a href="./frequently-asked-questions.html">FAQ</a></li>
             <li><a href="./legacy.html">The Legacy</a></li>
             <li><a href="./careers.html">Careers</a></li>
             <li><a href="./privacy-policy.html">Privacy Policy</a></li>

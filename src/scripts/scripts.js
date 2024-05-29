@@ -43,6 +43,7 @@ inputs.forEach(function (input) {
 
 // Mobile close on NewStudentOffer click
 const newStudentOffer = document.querySelector("#newStudentOffer");
+const contactButtonMobile = document.querySelector("#contactButtonMobile");
 const calendarLink = document.querySelector("#calendarLink");
 const navToggle = document.querySelector("#navToggle");
 
@@ -55,6 +56,14 @@ newStudentOffer.addEventListener(
 );
 
 calendarLink.addEventListener(
+  "click",
+  function closeMenu() {
+    navToggle.checked = false;
+  },
+  false
+);
+
+contactButtonMobile.addEventListener(
   "click",
   function closeMenu() {
     navToggle.checked = false;
