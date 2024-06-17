@@ -18,14 +18,14 @@ const slideTextAnimation = function () {
   slideText.forEach((element) =>
     element.animate(
       [
-        {transform: "translateX(2%)", opacity: "0", offset: 0.3},
+        { transform: "translateX(2%)", opacity: "0", offset: 0.3 },
         {
           transform: "translateX(2%)",
           opacity: "0",
           offset: 0.75,
           easing: "ease-out",
         },
-        {transform: "translateX(0)", opacity: "1"},
+        { transform: "translateX(0)", opacity: "1" },
       ],
       1300
     )
@@ -50,7 +50,7 @@ const slideAnimationScale = function () {
           offset: 0.8,
           easing: "ease-out",
         },
-        {transform: "scale(1)", offset: 1, easing: "ease-out"},
+        { transform: "scale(1)", offset: 1, easing: "ease-out" },
       ],
       1300
     )
@@ -59,10 +59,12 @@ const slideAnimationScale = function () {
 
 // /Event Listeners/
 
+// Change translate from 40% to 33.25% for 4 slides //
+
 next.addEventListener("click", function () {
   direction = -1;
   carousel.style.justifyContent = "flex-start";
-  slider.style.transform = "translate(-40%)";
+  slider.style.transform = "translate(-33.25%)";
   slideAnimationScale();
   slideTextAnimation();
   clearInterval(intervalID);
@@ -75,7 +77,7 @@ prev.addEventListener("click", function () {
     slider.appendChild(slider.firstElementChild);
   }
   carousel.style.justifyContent = "flex-end";
-  slider.style.transform = "translate(40%)";
+  slider.style.transform = "translate(33.25%)";
   slideAnimationScale();
   slideTextAnimation();
   clearInterval(intervalID);
@@ -114,7 +116,7 @@ function startShow() {
     intervalID = setInterval(function () {
       direction = -1;
       carousel.style.justifyContent = "flex-start";
-      slider.style.transform = "translate(-40%)";
+      slider.style.transform = "translate(-33.25%)";
 
       slideAnimationScale();
       slideTextAnimation();
@@ -133,7 +135,7 @@ slider.addEventListener(
   function () {
     clearInterval(intervalID);
   },
-  {passive: true}
+  { passive: true }
 );
 
 slider.addEventListener("mouseout", function () {
@@ -144,6 +146,6 @@ slider.addEventListener(
   function () {
     startShow();
   },
-  {passive: true}
+  { passive: true }
 );
 let yOffset = window.pageYOffset;
