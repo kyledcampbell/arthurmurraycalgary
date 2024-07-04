@@ -1,3 +1,13 @@
+.hidden {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}
+
 .contact {
   padding: 3em 0 3em;
   display: grid;
@@ -113,11 +123,24 @@ fieldset {
   font-size: 0.9rem;
 }
 
-input:focus {
+input,
+textarea {
+  padding: 0.83rem;
+  border: solid 1px #999;
+  border-radius: 8px;
+  background-color: rgb(243, 243, 243);
+  margin-top: 0.3em;
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+input:focus,
+textarea:focus {
   outline-color: var(--arthurMurrayYellow);
   background-color: #fff;
 }
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   font-size: 0.9rem;
   color: #999;
   font-family: "Montserrat", sans-serif;
@@ -190,6 +213,10 @@ input.dirty:not(:focus):invalid {
   margin-bottom: 1rem;
 }
 
+.contact label:nth-of-type(4) {
+  margin-top: 0;
+}
+
 .radio-buttons input[type="radio"] {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -206,7 +233,7 @@ input.dirty:not(:focus):invalid {
   display: inline-block;
   text-align: center;
   font-weight: 500;
-  margin-top: 0;
+  margin-top: -0.5em;
   font-size: 0.8em;
   color: black;
   margin-bottom: 1em;
