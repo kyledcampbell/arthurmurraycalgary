@@ -35,18 +35,36 @@
           <span class="required" role="presentation"></span>are required</small
         >
       </p>
-      <label class="required" for="name"> Name </label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        autocomplete="name"
-        placeholder="Name"
-        class="input"
-        aria-required="true"
-        required
-      />
-      <p>Please enter your name.</p>
+      <div class="namebox">
+        <firstname style="margin-right: 1rem">
+          <label class="required" for="fname"> First Name </label>
+          <input
+            type="text"
+            name="fname"
+            id="name"
+            autocomplete="given-name"
+            placeholder="First Name"
+            class="input-name first"
+            aria-required="true"
+            required
+          />
+          <p>Please enter first name.</p>
+        </firstname>
+        <lastname>
+          <label class="required" for="lname"> Last Name </label>
+          <input
+            type="text"
+            name="lname"
+            id="name"
+            autocomplete="family-name"
+            placeholder="Last Name"
+            class="input-name last"
+            aria-required="true"
+            required
+          />
+          <p>Please enter last name.</p>
+        </lastname>
+      </div>
       <label class="required" for="email"> Email </label>
       <input
         type="email"
