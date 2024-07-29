@@ -121,6 +121,7 @@ fieldset {
   background-color: rgb(243, 243, 243);
   margin-top: 0.3em;
   font-size: 0.9rem;
+  width: 100%;
 }
 
 input,
